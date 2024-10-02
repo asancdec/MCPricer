@@ -2,7 +2,7 @@
 
 ## Description
 
-The **Monte Carlo Option Pricer** is a C++ implementation of a financial option pricing model using the Monte Carlo simulation method with the Euler-Maruyama discretization technique. The program is designed to price European call and put options by simulating random paths of the underlying asset price and calculating the expected payoff at maturity.
+The **Monte Carlo Option Pricer** is a C++ implementation of a financial option pricing model using the Monte Carlo simulation method with the Euler-Maruyama discretization scheme. The program is designed to price European call and put options by simulating random paths of the underlying asset price and calculating the expected payoff at maturity.
 
 This implementation has been optimized for speed, utilizing efficient algorithms and data structures to ensure rapid computations, particularly beneficial for high-volume simulations. The Euler-Maruyama scheme is employed for discretizing the stochastic differential equation governing the asset price dynamics, which provides a reliable and computationally efficient way to simulate the paths of the underlying asset.
 
