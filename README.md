@@ -1,4 +1,4 @@
-# Monte Carlo Option Pricer
+#(C++) Monte Carlo Option Pricer with Euler-Maruyama Discretization
 
 ## Description
 
@@ -18,8 +18,8 @@ The model uses the Black-Scholes framework to derive parameters for the options 
 
 - `EuropeanOption.hpp`: Header file containing the declaration of the `EuropeanOption` class, which defines the properties and pricing methods for European options.
 - `EuropeanOption.cpp`: Contains the implementation of the `EuropeanOption` class.
-- `MonteCarlo.hpp`: Header file containing the declaration of the `MonteCarlo` class, which performs the Monte Carlo simulation to price options.
 - `MonteCarlo.cpp`: Contains the implementation of the `MonteCarlo` class.
+- `MonteCarlo.hpp`: Header file containing the declaration of the `MonteCarlo` class, which performs the Monte Carlo simulation to price options.
 - `MCPricer.cpp`: The main driver program that creates instances of `EuropeanOption` and `MonteCarlo`, runs simulations, and displays results.
 
 ## Usage
