@@ -1,4 +1,4 @@
-#(C++) Monte Carlo Option Pricer with Euler-Maruyama Discretization
+# (C++) Monte Carlo Option Pricer with Euler-Maruyama Discretization
 
 ## Description
 
@@ -22,9 +22,17 @@ The model uses the Black-Scholes framework to derive parameters for the options 
 - `MonteCarlo.hpp`: Header file containing the declaration of the `MonteCarlo` class, which performs the Monte Carlo simulation to price options.
 - `MCPricer.cpp`: The main driver program that creates instances of `EuropeanOption` and `MonteCarlo`, runs simulations, and displays results.
 
-## Usage
+## Dependencies
 
-1. **Compile the Code**: Use a C++ compiler (e.g., g++) to compile the source files. Make sure to link against the Boost library. 
+To compile and run the Monte Carlo Option Pricer, you will need to install the following dependencies:
 
-   ```bash
-   g++ -o MonteCarloOptionPricer MCPricer.cpp EuropeanOption.cpp MonteCarlo.cpp -lboost_system -lboost_random
+- **Boost Library**: Ensure you have the Boost library installed, specifically the following components:
+  - `boost_random`: For random number generation.
+  - `boost_math`: For statistical functions.
+
+You can install Boost using a package manager or download it from the [Boost website](https://www.boost.org/).
+
+### Installation (example for Ubuntu)
+
+```bash
+sudo apt-get install libboost-all-dev
