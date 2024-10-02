@@ -16,13 +16,15 @@ The model uses the Black-Scholes framework to derive parameters for the options 
 
 ## Files
 
-- `EuropeanOption.cpp`: Contains the implementation of the `EuropeanOption` class, which defines the properties and pricing methods for European options.
-- `MonteCarlo.cpp`: Contains the implementation of the `MonteCarlo` class, which performs the Monte Carlo simulation to price options.
+- `EuropeanOption.hpp`: Header file containing the declaration of the `EuropeanOption` class, which defines the properties and pricing methods for European options.
+- `EuropeanOption.cpp`: Contains the implementation of the `EuropeanOption` class.
+- `MonteCarlo.hpp`: Header file containing the declaration of the `MonteCarlo` class, which performs the Monte Carlo simulation to price options.
+- `MonteCarlo.cpp`: Contains the implementation of the `MonteCarlo` class.
 - `MCPricer.cpp`: The main driver program that creates instances of `EuropeanOption` and `MonteCarlo`, runs simulations, and displays results.
 
 ## Usage
 
 1. **Compile the Code**: Use a C++ compiler (e.g., g++) to compile the source files. Make sure to link against the Boost library. 
-   
+
    ```bash
    g++ -o MonteCarloOptionPricer MCPricer.cpp EuropeanOption.cpp MonteCarlo.cpp -lboost_system -lboost_random
