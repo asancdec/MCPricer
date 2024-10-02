@@ -16,14 +16,6 @@ The model uses the Black-Scholes framework to derive parameters for the options 
 - **European Options**: Specifically designed for European-style options (call and put).
 - **Boost Library Integration**: Utilizes the Boost library for random number generation and statistical distributions.
 
-## Files
-
-- `EuropeanOption.hpp`: Header file containing the declaration of the `EuropeanOption` class, which defines the properties and pricing methods for European options.
-- `EuropeanOption.cpp`: Contains the implementation of the `EuropeanOption` class.
-- `MonteCarlo.cpp`: Contains the implementation of the `MonteCarlo` class.
-- `MonteCarlo.hpp`: Header file containing the declaration of the `MonteCarlo` class, which performs the Monte Carlo simulation to price options.
-- `MCPricer.cpp`: The main driver program that creates instances of `EuropeanOption` and `MonteCarlo`, runs simulations, and displays results.
-
 ## Dependencies
 
 To compile and run the Monte Carlo Option Pricer, you will need to install the following dependencies:
@@ -31,6 +23,14 @@ To compile and run the Monte Carlo Option Pricer, you will need to install the f
   - `boost_random`: For random number generation.
   - `boost_math`: For statistical functions.
 You can install Boost using a package manager or download it from the [Boost website](https://www.boost.org/).
+
+## Files
+
+- `EuropeanOption.hpp`: Header file containing the declaration of the `EuropeanOption` class, which defines the properties and pricing methods for European options.
+- `EuropeanOption.cpp`: Contains the implementation of the `EuropeanOption` class.
+- `MonteCarlo.hpp`: Header file containing the declaration of the `MonteCarlo` class, which performs the Monte Carlo simulation to price options.
+- `MonteCarlo.cpp`: Contains the implementation of the `MonteCarlo` class.
+- `MCPricer.cpp`: The main driver program that creates instances of `EuropeanOption` and `MonteCarlo`, runs simulations, and displays results.
 
 ## Usage
 
